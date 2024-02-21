@@ -1,0 +1,12 @@
+{
+    "users": [
+        {
+            "name": "Matheus Mota",
+            "age": 26
+        },
+        {
+            "name": "Socorro Silva",
+            "age": 54
+        }
+    ]
+}

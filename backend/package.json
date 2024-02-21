@@ -1,0 +1,11 @@
+{
+  "name": "back-end",
+  "scripts": {    
+    "dev": "json-server ./server.json -p 8080"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "json-server": "1.0.0-alpha.23",
+    "nodemon": "^3.0.3"
+  }
+}
