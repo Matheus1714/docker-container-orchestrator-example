@@ -1,0 +1,26 @@
+version: '3'
+services:
+  backend:
+    container_name: back
+    build:
+      context: ./backend
+    command: npm run dev
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./backend:/usr/app
+      - node_module_back:/usr/app/node_modules
+  frontend:
+    container_name: front
+    build:
+      context: ./frontend
+    command: npm run dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/usr/app
+      - node_module_front:/usr/app/node_modules
+
+volumes:
+  node_module_back: {}
+  node_module_front: {}
